@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts - Pet Adoption</title>
+    <link rel="stylesheet" href="./findpet/Frontend/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./pawpet.png" alt="Paw Icon">
+            <h1 class="logo">Paws & Hearts</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="index.html">Find a Pet</a>
+            <a href="contact.html">Contact</a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fa-solid fa-moon dark-icon"></i>
+            </button>
+            <a href="indexfile.html">Adopt Now </a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Filter sidebar moved to extreme left -->
+        <aside class="filters">
+            <div class="filter-header">
+                <i class="bi bi-filter"></i>
+                <a href="#" class="clear-filters">Clear all filters</a>
+            </div>
+
+            <div class="filter-section">
+                <h3>Pet type</h3>
+                <div class="dropdown">
+                    <div class="select-box">
+                        <span>Dog</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="options">
+                        <li>Dog</li>
+                        <li>Cat</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Search by State</h3>
+                <div class="dropdown">
+                    <div class="select-box">
+                        <span>Select state here...</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="options">
+                        <li>Maharashtra</li>
+                        <li>Delhi</li>
+                        <li>Karnataka</li>
+                        <li>Tamil Nadu</li>
+                        <li>Kerala</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Search by City</h3>
+                <div class="dropdown">
+                    <div class="select-box">
+                        <span>Select city here...</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="options">
+                        <li>Mumbai</li>
+                        <li>New Delhi</li>
+                        <li>Bengaluru</li>
+                        <li>Chennai</li>
+                        <li>Kochi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="apply-filter">Apply Filter</button>
+        </aside>
+
+        <div class="content-area">
+            <h1 class="main-title">Pets Available For Adoption</h1>
+            
+            <main>
+                <section class="pet-listings">
+                    <!-- Pet cards here (unchanged) -->
+                    <!-- Card 1 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://i.pinimg.com/736x/e4/5f/2e/e45f2e325e930e88e537467688612dce.jpg" alt="Lexi - American Staffordshire Terrier">
+                            <div class="date-badge">Posted on: 12 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Lexi</h2>
+                            <p>Female, Senior</p>
+                            <p class="pet-location">Mumbai, Maharashtra</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Sanah</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-59328-800.jpg" alt="Sky - Golden Retriever">
+                            <div class="date-badge">Posted on: 09 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Sky</h2>
+                            <p>Male, Adulthood</p>
+                            <p class="pet-location">New Delhi, Delhi</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Tenzin Lhanze</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://images.unsplash.com/photo-1620070687415-4c8e50a042fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGNhdHN8ZW58MHx8MHx8fDA%3D" alt="Sushi - Golden Retriever">
+                            <div class="date-badge">Posted on: 08 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Sushi</h2>
+                            <p>Female, Adulthood</p>
+                            <p class="pet-location">Bengaluru, Karnataka</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Ankur</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?cs=srgb&dl=pexels-goochie-poochie-3361739.jpg&fm=jpg" alt="Max - Labrador">
+                            <div class="date-badge">Posted on: 07 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Max</h2>
+                            <p>Male, Puppy</p>
+                            <p class="pet-location">Chennai, Tamil Nadu</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Priya</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/cutest-cat-breeds-persian-cat-663a8c3f02bbe.jpg?crop=0.668xw:1.00xh;0.139xw,0&resize=980:*" alt="Bella - Beagle">
+                            <div class="date-badge">Posted on: 06 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Bella</h2>
+                            <p>Female, Young</p>
+                            <p class="pet-location">Kochi, Kerala</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Rahul</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6d87zy2l97Gbuz1xheO71Fzw31vhLFurSyg&s" alt="Charlie - Poodle">
+                            <div class="date-badge">Posted on: 05 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Charlie</h2>
+                            <p>Male, Adult</p>
+                            <p class="pet-location">Mumbai, Maharashtra</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Neha</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://images.unsplash.com/photo-1582456891925-a53965520520?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Luna - Husky">
+                            <div class="date-badge">Posted on: 04 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Luna</h2>
+                            <p>Female, Young</p>
+                            <p class="pet-location">New Delhi, Delhi</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Vikram</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://bloximages.chicago2.vip.townnews.com/capenews.net/content/tncms/assets/v3/editorial/7/d9/7d9fa5e0-cd02-11ef-a2e6-0fca751fce8c/677d382c2aa10.image.jpg?resize=375%2C500" alt="Cooper - German Shepherd">
+                            <div class="date-badge">Posted on: 03 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Cooper</h2>
+                            <p>Male, Adult</p>
+                            <p class="pet-location">Bengaluru, Karnataka</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Meera</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cards 9-20 (repeating pattern with different names) -->
+                    <!-- Card 9 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://hips.hearstapps.com/goodhousekeeping/assets/17/30/pembroke-welsh-corgi.jpg" alt="Daisy - Dachshund">
+                            <div class="date-badge">Posted on: 02 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Daisy</h2>
+                            <p>Female, Senior</p>
+                            <p class="pet-location">Chennai, Tamil Nadu</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Arjun</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://spiritdogtraining.com/wp-content/uploads/2021/10/American-Eskimo.png" alt="Milo - Shih Tzu">
+                            <div class="date-badge">Posted on: 01 Apr 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Rocky</h2>
+                            <p>Male, Young</p>
+                            <p class="pet-location">Kochi, Kerala</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Divya</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 11 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            
+                            <img src="https://indoorpet.osu.edu/sites/default/files/assets/images/cats/Calico.jpg" alt="Rocky - Boxer">
+                            <div class="date-badge">Posted on: 31 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Milo</h2>
+                            <p>Male, Adult</p>
+                            <p class="pet-location">Mumbai, Maharashtra</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Ravi</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://preview.redd.it/do-you-prefer-a-silver-pompaws-persian-cat-with-blue-or-v0-o8ltjg7cps7d1.png?width=640&crop=smart&auto=webp&s=98767b43e93199f32cb4f7fe921780b50241438b" alt="Zoe - Pomeranian">
+                            <div class="date-badge">Posted on: 30 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Zoe</h2>
+                            <p>Female, Cat</p>
+                            <p class="pet-location">New Delhi, Delhi</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Ananya</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 13 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://assets-news.housing.com/news/wp-content/uploads/2023/07/06233559/Cute-dog-breeds-that-make-the-best-pets-07.png" alt="Jack - Jack Russell Terrier">
+                            <div class="date-badge">Posted on: 29 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Jack</h2>
+                            <p>Male, Young</p>
+                            <p class="pet-location">Bengaluru, Karnataka</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Kiran</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 14 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://cdn-fastly.petguide.com/media/2022/02/15/8202742/persian.jpg?size=720x845&nocrop=1" alt="Ruby - Cocker Spaniel">
+                            <div class="date-badge">Posted on: 28 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Ruby</h2>
+                            <p>Female, Adult</p>
+                            <p class="pet-location">Chennai, Tamil Nadu</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Sanjay</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 15 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://static.vecteezy.com/system/resources/previews/009/292/316/non_2x/white-and-blue-eyes-persian-cats-photo.jpg" alt="Oscar - Bulldog">
+                            <div class="date-badge">Posted on: 27 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Oscar</h2>
+                            <p>Male, Senior</p>
+                            <p class="pet-location">Kochi, Kerala</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Pooja</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 16 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://static8.depositphotos.com/1057741/962/i/450/depositphotos_9624041-stock-photo-black-labrador-retriever.jpg" alt="Lily - Chihuahua">
+                            <div class="date-badge">Posted on: 26 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Lily</h2>
+                            <p>Female, Young</p>
+                            <p class="pet-location">Mumbai, Maharashtra</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Aditya</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 17 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://www.yourtango.com/sites/default/files/2020/golden-retriever.jpg" alt="Tucker - Border Collie">
+                            <div class="date-badge">Posted on: 25 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Tucker</h2>
+                            <p>Male, Adult</p>
+                            <p class="pet-location">New Delhi, Delhi</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Shreya</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 18 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://i.pinimg.com/736x/66/d5/75/66d575de5b96f9c957022e8a52b23fec.jpg" alt="Molly - Dalmatian">
+                            <div class="date-badge">Posted on: 24 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Molly</h2>
+                            <p>Female, Puppy</p>
+                            <p class="pet-location">Bengaluru, Karnataka</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Rohan</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 19 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/husky-on-white-royalty-free-image-1657740339.jpg" alt="Buddy - Rottweiler">
+                            <div class="date-badge">Posted on: 23 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Buddy</h2>
+                            <p>Male, Young</p>
+                            <p class="pet-location">Chennai, Tamil Nadu</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Nisha</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 20 -->
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="https://images.accentuate.io/?c_options=w_640&shop=vetslovepets-prod.myshopify.com&image=https://cdn.accentuate.io/589643088108/1706605305162/persian-3-(RESIZED).jpg?v=1706605305162" alt="Sadie - Great Dane">
+                            <div class="date-badge">Posted on: 22 Mar 2025</div>
+                        </div>
+                        <div class="pet-info">
+                            <h2>Sadie</h2>
+                            <p>Female, Adult</p>
+                            <p class="pet-location">Kochi, Kerala</p>
+                            
+                            <div class="contact-info">
+                                <p>Contact details -</p>
+                                <div class="contact-person">
+                                    <div class="avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <div class="person-details">
+                                        <p>Name: Vivek</p>
+                                        <p>Number: <a href="#" class="contact-now">Contact Now</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-share">
+                                <p>Share with friends -</p>
+                                <div class="social-icons">
+                                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="filtered-results" class="filtered-results">
+                    <!-- Filtered results will be displayed here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./findpet/Frontend/script.js"></script>
+</body>
+</html>

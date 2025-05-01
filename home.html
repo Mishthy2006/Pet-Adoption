@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Hearts | Pet Adoption</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="js/home.js" defer></script>
+</head>
+<body class="light-theme">
+  <div class="site-wrapper">
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="container navbar-container">
+        <a href="home.html" class="logo">
+          <i class="fa-solid fa-paw"></i>
+          <span>Paws & Hearts</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html">Find a Pet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+              <i class="fa-solid fa-sun light-icon"></i>
+              <i class="fa-solid fa-moon dark-icon"></i>
+            </button>
+            <a href="indexfile.html" class="btn btn-primary">Adopt Now</a>
+          </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-actions">
+          <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-sun light-icon"></i>
+            <i class="fa-solid fa-moon dark-icon"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container">
+          <a href="index.html" class="mobile-link">Find a Pet</a>
+          <a href="about.html" class="mobile-link">About</a>
+          <a href="contact.html" class="mobile-link">Contact</a>
+          <a href="indexfile.html" class="btn btn-primary mobile-btn">Adopt Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>Find Your Forever Friend</h1>
+            <p>Adopt a pet and change two lives forever - theirs and yours. Browse our available pets and start your adoption journey today.</p>
+            <div class="hero-buttons">
+              <a href="index.html" class="btn btn-primary btn-lg">Browse Available Pets</a>
+              <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="C:\Users\misht\OneDrive\Pictures\Screenshots\pic1-dog.jpg" alt="Happy dog with owner">
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction Section -->
+      <section class="intro">
+        <div class="container text-center">
+          <h2>Find Your Perfect Companion</h2>
+          <p>Browse our available pets and find your new best friend today.</p>
+          <a href="index.html" class="btn btn-primary">
+            <i class="fa-solid fa-paw"></i>
+            Browse All Pets
+          </a>
+        </div>
+      </section>
+
+      <!-- Featured Pets Section -->
+      <section class="featured-pets">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Featured Pets</h2>
+            <p>Meet some of our adorable pets waiting for their forever homes.</p>
+          </div>
+          <div class="pet-grid" id="featured-pets-grid">
+            <!-- Pet cards will be inserted here by JavaScript -->
+          </div>
+          <div class="text-center mt-lg">
+            <a href="index.html" class="btn btn-outline">View All Pets</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Adoption Process Section -->
+      <section class="adoption-process">
+        <div class="container">
+          <div class="two-column">
+            <div class="process-content">
+              <h2>Adoption Process</h2>
+              <p>Our adoption process is designed to ensure the best match between pets and their new families.</p>
+              <ul class="process-steps">
+                <li>
+                  <div class="step-number">1</div>
+                  <span>Browse available pets</span>
+                </li>
+                <li>
+                  <div class="step-number">2</div>
+                  <span>Submit an adoption application</span>
+                </li>
+                <li>
+                  <div class="step-number">3</div>
+                  <span>Meet your potential new pet</span>
+                </li>
+                <li>
+                  <div class="step-number">4</div>
+                  <span>Complete the adoption</span>
+                </li>
+              </ul>
+              <a href="indexfile.html" class="btn btn-primary">Start Adoption Process</a>
+            </div>
+            <div class="process-image">
+              <img src="C:\Users\misht\OneDrive\Pictures\Screenshots\pic4.1-dog.jpg" alt="Happy dog with new owner">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <a href="home.html" class="logo">
+              <i class="fa-solid fa-paw"></i>
+              <span>Paws & Hearts</span>
+            </a>
+            <p>Finding loving homes for pets in need since 2023.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Available Pets</a></li>
+              <li><a href="adopt.html">Adoption Process</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul class="footer-links">
+              <li><a href="about.html">Our Mission</a></li>
+              <li><a href="about.html">Our Team</a></li>
+              <li><a href="about.html">Our Facilities</a></li>
+              <li><a href="about.html">Success Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <address>
+              123 Adoption Lane<br>
+              Pet City, PC 12345<br>
+              Phone: (+91) 9873459628<br>
+              Email: info@pawsandhearts.org
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Paws & Hearts. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

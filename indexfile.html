@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Adoption Form</title>
+  <link rel="stylesheet" href="./adoption/frontend/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./pawpet.png" alt="Paw Icon">
+      <span>Paws & Hearts</span>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="index.html">Find a Pet</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" id="themeToggle">
+        <!-- <i class="fas fa-sun"></i> -->
+        <i class="fas fa-moon"></i>
+
+      </button>
+      <a href="indexfile.html">Adopt Now </a>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="form-container">
+      <div class="form-content">
+        <div class="form-image">
+          <img src="https://i.pinimg.com/736x/f6/35/4e/f6354ebbe42c19667243212034033f48.jpg" alt="Pet" />
+        </div>
+        <div class="form-fields">
+          <h1>Adopt a Pet</h1>
+          <form id="adoptionForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <select name="petType" required>
+              <option value="">Select Pet Type</option>
+              <option value="Dog">Dog</option>
+              <option value="Cat">Cat</option>
+            </select>
+            <textarea name="message" placeholder="Why do you want to adopt?" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <p id="responseMessage"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="./adoption/frontend/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Paws & Hearts</title>
+  <link rel="stylesheet" href="./aboutUs/styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-paw"></i>
+          <span>Paws & Hearts</span>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="./home.html" class="nav-link">
+            <span>Home</span>
+          </a>
+          <a href="./about.html" class="nav-link active">
+            <span>About Us</span>
+          </a>
+          <a href="index.html" class="nav-link">
+            <span>Find a Pet</span>
+          </a>
+          <a href="contact.html" class="nav-link">
+            <span>Contact</span>
+          </a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="indexfile.html" class="donate-btn">Adopt Now</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-container">
+          <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container">
+        <a href="" class="nav-link">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="about.html" class="nav-link active">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>About Us</span>
+        </a>
+        <a href="index.html" class="nav-link">
+          <span>Find a Pet</span>
+        </a>
+        <a href="donate.html" class="donate-btn">Donate Now</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>About Paws & Hearts</h1>
+          <p>We're dedicated to finding loving homes for pets in need and supporting animal welfare in our community.</p>
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="mission">
+        <div class="container">
+          <div class="mission-content">
+            <div class="mission-text">
+              <span class="badge">Our Mission</span>
+              <h2>Finding Forever Homes</h2>
+              <p>At PawsHome, our mission is to rescue, rehabilitate, and rehome abandoned and surrendered animals. We believe every pet deserves a loving home and proper care. Through education, advocacy, and community engagement, we strive to end pet homelessness and promote responsible pet ownership.</p>
+              <p>Founded in 2019, we've helped over 3,000 animals find their forever homes. Our no-kill policy ensures every animal gets the time they need to find the perfect match.</p>
+              
+            </div>
+            <div class="mission-image">
+              <img src="./aboutUs/images.jpeg" alt="Happy adopted pets with their new families">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team">
+        <div class="container">
+          <div class="section-header">
+            <h2>Meet Our Team</h2>
+            <p>Our dedicated staff and volunteers work tirelessly to care for our animals and find them loving homes.</p>
+          </div>
+          <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+              <div class="member-image">
+                <img src="./aboutUs/mish1.jpg" alt="Sarah Johnson">
+              </div>
+              <h3>Mishthy Sharma</h3>
+              <p class="member-title">Founder & Director</p>
+              <p class="member-bio">Passionate animal advocate with 15+ years in animal welfare.</p>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="team-member">
+              <div class="member-image">
+                <img src="./aboutUs/ps.jpg" alt="Michael Rodriguez">
+              </div>
+              <h3>Palak Sharma</h3>
+              <p class="member-title">Head Veterinarian</p>
+              <p class="member-bio">Specializes in rescue animal care and rehabilitation.</p>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="team-member">
+              <div class="member-image">
+                <img src="./aboutUs/pj.jpg" alt="Emily Chen">
+              </div>
+              <h3>Palak Jindal</h3>
+              <p class="member-title">Adoption Coordinator</p>
+              <p class="member-bio">Helps match pets with their perfect forever families.</p>
+            </div>
+            
+            <!-- Team Member 4 -->
+            <div class="team-member">
+              <div class="member-image">
+                <img src="./aboutUs/kriti.jpg" alt="David Wilson">
+              </div>
+              <h3>Kriti Aggarwal</h3>
+              <p class="member-title">Volunteer Coordinator</p>
+              <p class="member-bio">Organizes our amazing team of 100+ dedicated volunteers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facilities Section -->
+      <section class="facilities">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Facilities</h2>
+            <p>We provide a safe, clean, and loving environment for all animals in our care.</p>
+          </div>
+          
+          <div class="facilities-grid">
+            <!-- Facility 1 -->
+            <div class="facility-card">
+              <div class="facility-image">
+                <img src="./aboutUs/shelter.webp" alt="Main Shelter Building">
+              </div>
+              <div class="facility-content">
+                <h3>Main Shelter</h3>
+                <p>Our 10,000 sq ft main building houses up to 50 dogs and 75 cats in comfortable, spacious accommodations designed to reduce stress and promote well-being.</p>
+              </div>
+            </div>
+            
+            <!-- Facility 2 -->
+            <div class="facility-card">
+              <div class="facility-image">
+                <img src="./aboutUs/vet.avif" alt="Veterinary Clinic">
+              </div>
+              <div class="facility-content">
+                <h3>Veterinary Clinic</h3>
+                <p>Our on-site veterinary clinic provides comprehensive medical care, including spay/neuter services, vaccinations, and emergency treatment.</p>
+              </div>
+            </div>
+            
+            <!-- Facility 3 -->
+            <div class="facility-card">
+              <div class="facility-image">
+                <img src="./aboutUs/play.jpeg" alt="Play Areas">
+              </div>
+              <div class="facility-content">
+                <h3>Play & Exercise Areas</h3>
+                <p>Multiple indoor and outdoor play areas give our animals plenty of space to exercise, socialize, and show their true personalities to potential adopters.</p>
+              </div>
+            </div>
+          </div>
+          
+        
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <i class="fa-solid fa-paw"></i>
+              <span>Paws&Hearts</span>
+            </div>
+            <p>Finding loving homes for pets in need since 2023.</p>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="index.html">Find a Pet</a></li>
+              <li><a href="indexfile.html">Adopt</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <address>
+              <p>123 Adoption Lane</p>
+              <p>Pet City,PC 12345</p>
+              <p>Phone: (+91) 9873459628</p>
+              <p>Email: info@pawsandhearts.org</p>
+            </address>
+          </div>
+          
+          <div class="footer-hours">
+            <h3>Hours</h3>
+            <ul>
+              <li>Monday - Friday: 10am - 7pm</li>
+              <li>Saturday: 9am - 5pm</li>
+              <li>Sunday: 11am - 4pm</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Paws&Hearts. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./aboutUs/script.js"></script>
+</body>
+</html>
